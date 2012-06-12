@@ -10,8 +10,10 @@ allows you to modify it according to your needs without having to do 'filelibrar
 
 To prevent unauthorized access to your upload media folder you must include the following Apache directive:
 
+```apache
    # Security - prevent direct apache serving of /media/filelibrary
    <Location /media/filelibrary/>
       Order deny,allow
       Deny from all
    </Location>
+```
